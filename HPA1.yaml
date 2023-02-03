@@ -2,7 +2,7 @@ apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
   annotations:
-  name: node-example
+  name: php-apache
   namespace: default
 spec:
   maxReplicas: 4
@@ -10,5 +10,5 @@ spec:
   scaleTargetRef:
     apiVersion: extensions/v1
     kind: Deployment
-    name: node-example
+    name: php-apache
   targetCPUUtilizationPercentage: 1
