@@ -1,34 +1,34 @@
 # Kubernetes
 
-NAME                              SHORTNAMES          APIVERSION                             NAMESPACED   KIND
-bindings                                              v1                                     true         Binding
-componentstatuses                 cs                  v1                                     false        ComponentStatus
-configmaps                        cm                  v1                                     true         ConfigMap
-endpoints                         ep                  v1                                     true         Endpoints
-events                            ev                  v1                                     true         Event
-limitranges                       limits              v1                                     true         LimitRange
-namespaces                        ns                  v1                                     false        Namespace
-nodes                             no                  v1                                     false        Node
-persistentvolumeclaims            pvc                 v1                                     true         PersistentVolumeClaim
-persistentvolumes                 pv                  v1                                     false        PersistentVolume
-pods                              po                  v1                                     true         Pod
-podtemplates                                          v1                                     true         PodTemplate
-replicationcontrollers            rc                  v1                                     true         ReplicationController
-resourcequotas                    quota               v1                                     true         ResourceQuota
-secrets                                               v1                                     true         Secret
-serviceaccounts                   sa                  v1                                     true         ServiceAccount
-services                          svc                 v1                                     true         Service
-mutatingwebhookconfigurations                         admissionregistration.k8s.io/v1        false        MutatingWebhookConfiguration
-validatingwebhookconfigurations                       admissionregistration.k8s.io/v1        false        ValidatingWebhookConfiguration
-customresourcedefinitions         crd,crds            apiextensions.k8s.io/v1                false        CustomResourceDefinition
-apiservices                                           apiregistration.k8s.io/v1              false        APIService
-controllerrevisions                                   apps/v1                                true         ControllerRevision
-daemonsets                        ds                  apps/v1                                true         DaemonSet
-deployments                       deploy              apps/v1                                true         Deployment
-replicasets                       rs                  apps/v1                                true         ReplicaSet
-statefulsets                      sts                 apps/v1                                true         StatefulSet
-tokenreviews                                          authentication.k8s.io/v1               false        TokenReview
-localsubjectaccessreviews                             authorization.k8s.io/v1                true         LocalSubjectAccessReview
+# NAME                              SHORTNAMES          APIVERSION                             NAMESPACED   KIND
+# bindings                                              v1                                     true         Binding
+# componentstatuses                 cs                  v1                                     false        ComponentStatus# 
+# configmaps                        cm                  v1                                     true         ConfigM# ap
+# endpoints                         ep                  v1                                     true         Endpoin# ts
+# events                            ev                  v1                                     true         Eve# nt
+# limitranges                       limits              v1                                     true         Lim# itRange
+# namespaces                        ns                  v1                                     false        Nam# espace
+# nodes                             no                  v1                                     false        No# de
+# persistentvolumeclaims            pvc                 v1                                     true         Pe# rsistentVolumeClaim
+# persistentvolumes                 pv                  v1                                     false        Pe# rsistentVolume
+# pods                              po                  v1                                     true         P# od
+# podtemplates                                          v1                                     true         PodTemplate
+# replicationcontrollers            rc                  v1                                     true         ReplicationController
+# resourcequotas                    quota               v1                                     true         ResourceQuot# a
+# secrets                                               v1                                     true         Secr# et
+# serviceaccounts                   sa                  v1                                     true         ServiceAccount
+# services                          svc                 v1                                     true         Service# 
+# mutatingwebhookconfigurations                         admissionregistration.k8s.io/v1        false        Mutatin# gWebhookConfiguration
+# validatingwebhookconfigurations                       admissionregistration.k8s.io/v1        false        Validat# ingWebhookConfiguration
+# customresourcedefinitions         crd,crds            apiextensions.k8s.io/v1                false        CustomR# esourceDefinition
+# apiservices                                           apiregistration.k8s.io/v1              false        APIService
+# controllerrevisions                                   apps/v1                                true         ControllerRevision
+# daemonsets                        ds                  apps/v1                                true         DaemonSet
+# deployments                       deploy              apps/v1                                true         Deployment
+# replicasets                       rs                  apps/v1                                true         ReplicaSet
+# statefulsets                      sts                 apps/v1                                true         StatefulSet
+# tokenreviews                                          authentication.k8s.io/v1               false        TokenReview
+# localsubjectaccessreviews                             authorization.k8s.io/v1                true         LocalSubjectAccessReview
 selfsubjectaccessreviews                              authorization.k8s.io/v1                false        SelfSubjectAccessReview
 selfsubjectrulesreviews                               authorization.k8s.io/v1                false        SelfSubjectRulesReview
 subjectaccessreviews                                  authorization.k8s.io/v1                false        SubjectAccessReview
