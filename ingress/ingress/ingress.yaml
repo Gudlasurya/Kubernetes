@@ -5,7 +5,11 @@ metadata:
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
-  ingressClassName: nginx-example
+  defaultBackend:
+    service:
+      name: usermgmt-webapp2-service
+      port:
+        number: 80
   rules:
   - http:
       paths:
