@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: myapp1
   labels:
     env: dev
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: myapp
+      app: mytest
   template:
     metadata:
       labels:
-        app: myapp
+        app: mytest
     spec:
       containers:
-      - name: myapp
+      - name: test
         image: webappapi.azurecr.io/newapimulti:v1
         resources:
           limits:

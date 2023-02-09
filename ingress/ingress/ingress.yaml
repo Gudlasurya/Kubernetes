@@ -3,13 +3,8 @@ kind: Ingress
 metadata:
   name: minimal-ingress
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: nginx
 spec:
-  defaultBackend:
-    service:
-      name: usermgmt-webapp2-service
-      port:
-        number: 80
   rules:
   - http:
       paths:
@@ -24,10 +19,10 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: usermgmt-webapp2-service
+            name: usermgmt-webapp-service
             port:
               number: 80
-      - path: /app3/
+      - path: /app2/
         pathType: Prefix
         backend:
           service:
