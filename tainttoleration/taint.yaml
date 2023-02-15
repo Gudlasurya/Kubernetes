@@ -18,5 +18,12 @@ spec:
       value: "devs"
       effect: "NoSchedule"
   containers:
-    - name: just-container
-      image: supergiantkir/animals:bear
+     - name: just-container
+       image: supergiantkir/animals:bear
+       resources:
+         requests:
+           memory: "1Gi"
+           cpu: 1
+         limits:
+           memory: "2GI"
+           cpu: 2

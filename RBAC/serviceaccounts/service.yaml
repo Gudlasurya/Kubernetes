@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2023-02-15T11:52:00Z"
+  name: dashboard-service
+  namespace: default
+  resourceVersion: "795"
+  uid: 4ded0aaf-654a-4e36-825f-2df9db938380
+spec:
+  clusterIP: 10.43.248.228
+  clusterIPs:
+  - 10.43.248.228
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 30080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    name: web-dashboard
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
